@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- This is the main page(home) of my web site.As usual i used same layout for every web page 
+        of my web site to keep consistancy of my web site. So my web page runs on very user freindy,simple theme 
+        designed by me.  -->
+
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Life Saver | Home </title>
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="vanillaSlideshow.css">
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <style>
+        .carousel-caption{
+            margin-bottom: 30%;
+        }
+        .container1{
+            
+           height: 700px;
+            z-index: -1;
+            
+        }
+        .h1slide{
+            font-size:800%;
+        }
+        #myCarousel{
+            position: absolute;
+            
+        }
+        
+        
+    </style>
+
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+    </script>
+
+
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">Life</span>Saver</h1>
+        </div>
+        <nav>
+
+            <!-- navigation bar starts from here -->
+            <ul>
+                <li  class="current"><a href="home.html">Home</a></li>
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="contact.html">Contact US</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="newsletter"></section>
+
+    
+<div class="container1">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/prd2.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h1 class="h1slide">Welcome to Life Saver!</h1>
+          <h1>We providing best Cardiovascular Pre- warning devices to you!</h1>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/prd1.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h1 class="h1slide" >Welcome to Life Saver!</h1>
+          <h1>Thank you, Chicago!</h1>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/prd3.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h1 class="h1slide">Welcome to Life Saver!</h1>
+          <h1>We love the Big Apple!</h1>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    
+    <div class="agileits_reservation">
+        
+        
+    </div>
+    
+</div>
+
+    
+
+    <div class="container">
+
+        <!-- title goes here -->
+        <h1> Welcome to Life Saver!</h1>
+
+</div>
+
+<!-- HCI= I used jquery UI tabs. i used theree tabs. about product,technology and
+     buy product are those tabs.I think that is a very user friendly moveto my site. -->
+<div id="tabs">
+    <ul>
+        <!--jquery UI tabs starts from here -->
+        <li><a href="#tabs-1">About Product</a></li>
+        <li><a href="#tabs-2">Technology</a></li>
+        <li><a href="#tabs-3">Google Map</a></li>
+    </ul>
+    <div id="tabs-1">
+
+
+        <p><style>
+            
+            img {
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 5px;
+                width: 150px;
+            }
+
+            img:hover {
+                box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+            }
+        </style>
+
+<div class="slideshow-container">
+    <!-- image slide show starts from here -->
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/prd1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/prd2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/prd3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+    </div>
+    <br>
+    <!-- dots in slideshow -->
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        //javasript function for image slideshow in home page.
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+        
+        
+
+      
+    </div>
+
+<!-- bootstrap panelfor include content in about product tab-->
+    <div class="panel-group">  
+        <div class="panel panel-success">
+            <div class="panel-heading"><b>About product </b></div>
+            <div class="panel-body">
+
+                    We are planning to implement a device that can predict cardiovascular diseases (heart diseases) before it happens . Our product is based on not only one factor but also it takes several inputs to predict a accurate answer to the person who are going to used it.
+                    That’s the specialty of our upcoming product. In present world there are many existing products and devices to detect heart problems, but they are not gives a fully accurate answer to predict patient’s health situation. Our product is not based on one parameter. Its based on several parameters. For that we can generate a highly accurate health report regarding heart diseases. Our device is gives a output that high percentage equal as doctor’s live prediction. But we have to mention that our product is not for replacing doctor’s procedure. Our main aim is save patient’s life when the patient feels unsecure at outside of hospitals. Patient can use this device and get instant actions for a medical help and also our device informs family members of patient’s in real time by sending alerts. Now we are going to implement new innovation to save more of mankind however we can. We are going to use present innovations with and trying to build more accurate IOT device to predict cardiovascular diseases in real time. Before we are going to talk about this device, we have focused with what are the real parameters that doctors are diagnosing to get idea about heart patient.
+
+            </div>
+          </div>
+          </div>
+
+    <div id="tabs-2"> <!-- Stating of second tab, its about technology we have used -->
+
+        <div class="slideshow-container">
+                <!-- image slideshow starts here -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/prd1.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/prd2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/prd3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/prd3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                //js of the image slideshow
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 4000); // Change image every 2 seconds
+            }
+        </script>
+
+
+    </div>
+    <div id="tabs-3">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.11080889211!2d48.544131314595724!3d-13.02861499081849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22137a237b3067e1%3A0xb608a581738ea998!2sConstance+Tsarabanjina+Madagascar!5e0!3m2!1sen!2slk!4v1514897530766" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></iframe>
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+<!-- footer of my web app starts here -->
+
+<footer>
+    <p>LLifeSaver Ks, Copyright &copy; 2018</p>
+</footer>
+
+
+</body>
+</html>

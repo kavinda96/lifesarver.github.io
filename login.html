@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Life Saver | Home </title>
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+   
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+  
+   <script>
+  // Initialize Firebase
+   
+  var config = {
+    apiKey: "AIzaSyASCznz47IhdV79ammckYeA4S3ltWM2Z4s",
+    authDomain: "databasesserver-7cf2d.firebaseapp.com",
+    databaseURL: "https://databasesserver-7cf2d.firebaseio.com",
+    projectId: "databasesserver-7cf2d",
+    storageBucket: "databasesserver-7cf2d.appspot.com",
+    messagingSenderId: "110610620556"
+  };
+  firebase.initializeApp(config);
+    </script>
+
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+    </script>
+<style>
+    #tabs{
+       margin-top: 6%;
+       margin-left: 20%;
+        margin-right:20%;
+        
+        
+    }
+    footer{
+       margin-top: 10%;
+    }
+    </style>
+
+
+</head>
+<body >
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">Life</span>Saver</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="contact.html">Contact US</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="newsletter"></section>
+    <div class="container">
+        <h1> Welcome to Life Saver!</h1>
+
+    </div>
+
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Doctor's login</a></li>
+        <li><a href="#tabs-2">Guardian's login</a></li>
+        <li><a href="#tabs-3">registration</a></li>
+    </ul>
+    <div id="tabs-1">
+
+
+        <div class="panel-group">  
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><b>What's Doctors login? </b></div>
+                        <div class="panel-body"><i>Authorized doctor can login into the docor's login and they'll able to see respective patient's medicare details with our web site.
+                        </div>
+                      </div>
+               </div>
+
+            <div class="container1" >
+                    <h2 id="doctor" >Doctor's Login</h2>
+                    <form>
+                      <div class="form-group">
+                        <label for="docId">doctor's Id:</label>
+                        <input type="text" class="form-control" id="idDoc" placeholder="Enter email" name="idDoc" size="10">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="Docpwd" placeholder="Enter password" name="Docpwd" size="15">
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+
+                      <li><a href="#tabs-3">not a member </a></li>
+
+                     
+                    </form>
+           </div>
+
+           
+      
+    </div>
+
+
+   
+    <div id="tabs-2">
+
+        <div class="panel-group">  
+            <div class="panel panel-success">
+                <div class="panel-heading"><b>What'guardian's login? </b></div>
+                <div class="panel-body">respective guardian from each patients can log in to their profiles and they'll able to see filtered details of their respective patients.
+                </div>
+              </div>
+       </div>
+
+    <div class="container1" >
+            <h2 id="gurdian" >Guardian's Login</h2>
+            <form>
+              <div class="form-group">
+                <label for="gur">User name:</label>
+                <input type="text" class="form-control" id="un" placeholder="Enter user name" name="un" size="10">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pw" placeholder="Enter password" name="pw" size="15">
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-default" onclick="login()">Submit</button>
+
+              <li><a href="#tabs-3">not a member</a></li>
+
+             
+            </form>
+   </div>
+
+    </div>
+
+    <div id="tabs-3">
+            <!-- <div class="panel-group">  
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><b>Want to buy our product? </b></div>
+                        <div class="panel-body">You can buy our productvia play store and we're manage to deliver our hardware within one week. For the first three months we're going to deliver special discounts as promotions to our loyal customers. 
+            
+                        </div>
+                      </div>
+               </div> -->
+        
+            <div class="container1" >
+                    <h2 id="doctor" >Guardian's Registration</h2>
+                    <form>
+
+                        <div class="form-group">
+                                <label for="pId">Patient's ID: </label>
+                                <input type="text" class="form-control" id="pId" placeholder="Enter patient's Id" name="pId" size="15">
+                              </div>
+                              <div class="form-group">
+                                    <label for="username">User Name:</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Enter user name" name="username" size="10">
+                                  </div>
+
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" size="10">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" size="15">
+                      </div>
+
+                      <div class="form-group">
+                            <label for="pwd">Confirm Password:</label>
+                            <input type="password" class="form-control" id="confirmpwd" placeholder="Enter password" name="pwd" size="15">
+                          </div>
+
+                      <div class="form-group">
+                            <label for="pwd">First name:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter first name" name="uname" size="15">
+                        </div>
+
+                        <div class="form-group">
+                                <label for="lst">Last name:</label>
+                                <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lname" size="15">
+                            </div>
+                        <div class="form-group">
+                                <label for="age">Age: </label>
+                                <input type="text" class="form-control" id="age" placeholder="Enter age" name="age" size="15">
+                              </div>
+                        
+                        <div class="form-group">
+                                    <label for="tel">Tel number: </label>
+                                    <input type="text" class="form-control" id="tel" placeholder="Enter tel number" name="tel" size="15">
+                                  </div>      
+
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                      </div>
+                      <button type="submit" class="btn btn-default" onclick="saveDb()">Submit</button>
+        
+                      <li><a href="#tabs-1">Sign In</a></li>
+        
+                     
+                    </form>
+           </div>
+
+       
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<footer>
+    <p>KaviSach, Copyright &copy; 2017</p>
+</footer>
+
+
+    
+
+
+
+    <script>
+              
+        
+
+            function saveDb(){
+                var dbSaverOnee=firebase.database();
+                var username=document.getElementById("username").value;
+                var firstName=document.getElementById("uname").value;
+                var lastName=document.getElementById("lname").value;
+                var email=document.getElementById("email").value;
+                var pw=document.getElementById("pwd").value;
+                var confirmpw=document.getElementById("confirmpwd").value;
+                var ageVal=document.getElementById("age").value;
+                var telNoVal=document.getElementById("tel").value;
+                var type="Gardiant";
+                var Id=document.getElementById("pId").value;
+                
+                if(username=="" || firstName=="" || lastName=="" || email=="" || pw=="" || confirmpw==""|| ageVal=="" || telNoVal=="" || Id=="" ){
+                    alert(" Please fill all fields");
+                    
+                }
+                
+                
+                 
+                
+                dbSaverOnee.ref("User/"+username).set({userName:username,fname:firstName,lname :lastName,email :email,Password :pw,ConfirmPassword : confirmpw,Age : ageVal,TelNo : telNoVal,Type : type,PstientID : Id});
+            }
+
+//  function login(snapshot) {
+//      var ref = firebase.database();
+//    var txtEmail = document.getElementById('un').value;
+//    var txtPassword = document.getElementById('pw').value;
+//      
+//      ref.child("User").once('value', gotUserData);
+//
+//        //User user=dataSnapshot.child(txtEmail.getValue(User.class);
+//        snapshot.forEach(userSnapshot => {
+//               var k = userSnapshot.key;
+//               var id = userSnapshot.val().email;
+//               var name = userSnapshot.val().userName;
+//      
+//          alert(name);  
+//        });
+//    
+//        userID=result.uid;
+//
+//        console.log(result.uid);
+//
+//        window.location.replace('dashboard/dashboard2.php?u='+userID);
+
+
+//    }).catch(function(error) {
+//        // Handle Errors here.
+//        var errorCode = error.code;
+//        var errorMessage = error.message;
+//        // ...
+//
+//        window.alert("Error : "+ errorMessage);
+//    });
+//}  
+       // var USERS_LOCATION = 'https://databasesserver-7cf2d.firebaseio.com/User';
+
+        function userExistsCallback(userId, exists) {
+         if (exists) {
+            alert('user ' + userId + ' exists!');
+         } else {
+            alert('user ' + userId + ' does not exist!');
+         }
+        }
+        function login() {
+            
+            var USERS_LOCATION = 'https://databasesserver-7cf2d.firebaseio.com/User';
+            
+            var userId=document.getElementById('un').value;
+            alert(userId);
+            var usersRef = new Firebase(USERS_LOCATION);
+            usersRef.child(userId).once('value', function(snapshot) {
+               var exists = (snapshot.val() !== null);
+                alert(exists);
+               userExistsCallback(userId, exists);
+  });
+}
+
+   
+      </script>
+
+
+    </div>
+    </body>
+</html>
